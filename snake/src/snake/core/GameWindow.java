@@ -3,8 +3,11 @@ package snake.core;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.nio.Buffer;
+
 import javax.swing.JFrame;
 import snake.util.Constantes;
 import snake.graphics.Renderer;
@@ -13,6 +16,8 @@ import snake.scene.Snake;
 public class GameWindow extends JFrame implements KeyListener{
     private Renderer renderer;
     private Snake snake;
+	private Image buffer;
+	private Graphics gImage;
     
     //Construct
     public GameWindow(Snake snake){
@@ -26,14 +31,16 @@ public class GameWindow extends JFrame implements KeyListener{
         setResizable(false);
         addKeyListener(this);
         setVisible(true);
+        
+        buffer = createImage(Constantes.WINDOW_WIDTH, Constantes.WINDOW_HEIGHT);
+        gImage = buffer.getGraphics();
     }
 
-    @Override
-    public void paint(Graphics g) {
+    public void repaint(Graphics g) {
         renderer.render(g);
     }
     
-      @Override
+      
       //Receber tecla precionada
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode() == KeyEvent.VK_UP){ 
@@ -49,16 +56,26 @@ public class GameWindow extends JFrame implements KeyListener{
         }
     }
     
-    public Renderer getRenderer(){
-        return renderer;
-    }
+   @Override
+   public void paint(Graphics gScreen) {
+	   
+	   renderer.render(gImage);
+	   gScreen.drawImage(buffer, 0,0,null);
+   }
+   
+   public Renderer getRenderer() {
+	   return renderer;
+   }
 
-    @Override
-    public void keyTyped(KeyEvent ke) {
-        
-    }
+@Override
+public void keyTyped(KeyEvent e) {
+	// TODO Auto-generated method stub
+	
+}
 
-    @Override
-    public void keyReleased(KeyEvent ke) {
-    }
+@Override
+public void keyReleased(KeyEvent e) {
+	// TODO Auto-generated method stub
+	
+}
 }

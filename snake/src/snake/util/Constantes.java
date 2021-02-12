@@ -1,7 +1,7 @@
 
 package snake.util;
 
-import javafx.scene.paint.Color;
+import java.awt.Color;
 
 public class Constantes {
     public static final String GAME_TITLE = "Snake Game";

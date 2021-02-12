@@ -3,16 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Drawable.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Application.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Constantes.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Shape.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Renderer.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Snake.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/GameWindow.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Game.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Rect.java</file>
-            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/Background.java</file>
+            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/graphics/Rect.java</file>
+            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/graphics/Shape.java</file>
+            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/util/Constantes.java</file>
+            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/util/GameUtils.java</file>
+            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/core/Game.java</file>
+            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/scene/Snake.java</file>
+            <file>file:/C:/Users/George/Documents/NetBeansProjects/snake/src/snake/core/GameWindow.java</file>
         </group>
     </open-files>
 </project-private>
