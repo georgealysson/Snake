@@ -13,6 +13,8 @@ public class Constantes {
     public static final int SNAKE_SIZE = 20;
     public static final int SNAKE_INITIAL_X = 120;
     public static final int SNAKE_INITIAL_Y = 120;
+    public static final int GAME_MIN_TIME_BETWEEN_KEYBOARD_EVENTS = 40;
+    public static final int FOOD_SIZE = 6;
 
     
 }
